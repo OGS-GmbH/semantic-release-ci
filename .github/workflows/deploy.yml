@@ -7,4 +7,4 @@ on:
 
 jobs:
   call-npm-package-deploy:
-    uses: OGS-GmbH/reusable-github-actions/.github/workflows/npm/package-deploy.yml@1
+    uses: OGS-GmbH/reusable-github-actions/.github/workflows/npm-package-deploy.yml@1
