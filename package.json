@@ -1,0 +1,58 @@
+{
+	"name": "@ogs/ci",
+	"version": "2.0.1",
+	"author": "Simon Kovtyk",
+	"exports": {
+    ".": {
+      "default": "./public-api.mjs"
+    }
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+http://ogs-hq-git.ogs.local/standard/shared/npm/ci.git"
+	},
+  "publishConfig": {
+		"directory": "dist/prod"
+	},
+	"scripts": {
+		"lint:commit": "commitlint --edit",
+    "lint:ci:eslint": "eslint .",
+		"build:dev": "node .esbuild/dev.mjs",
+		"build:prod": "node .esbuild/prod.mjs"
+	},
+	"dependencies": {
+		"semantic-release": "^24.1.1",
+		"@semantic-release/commit-analyzer": "^13.0.0",
+		"@semantic-release/release-notes-generator": "^14.0.1",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/npm": "^12.0.1",
+		"@semantic-release/gitlab": "^13.2.1"
+	},
+	"devDependencies": {
+		"@ogs/linter": "^4.0.4",
+		"cross-env": "^7.0.3",
+		"cross-spawn": "^7.0.6",
+		"esbuild": "^0.24.0",
+		"esbuild-plugin-file-path-extensions": "^2.1.4",
+		"esbuild-plugin-package-json": "^2.0.0",
+		"fast-glob": "^3.3.2",
+		"typescript": "^5.7.2",
+		"@types/node": "^22.0.0",
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/config-conventional": "^19.6.0",
+		"husky": "^9.1.5",
+		"lint-staged": "^15.2.10",
+		"@eslint/js": "^9.9.0",
+		"@eslint/json": "^0.6.0",
+		"@eslint/markdown": "^6.2.1",
+		"@stylistic/eslint-plugin-js": "^2.10.1",
+		"@stylistic/eslint-plugin-plus": "^2.10.1",
+		"@stylistic/eslint-plugin-ts": "^2.10.1",
+		"eslint": "^9.9.0",
+		"eslint-plugin-security": "^3.0.1",
+		"eslint-plugin-unicorn": "^56.0.0",
+		"typescript-eslint": "^8.2.0",
+    "globals": "^15.13.0",
+    "@types/semantic-release": "^20.0.6"
+	}
+}
