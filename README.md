@@ -11,7 +11,7 @@ By standardizing the release workflow, it helps teams maintain clear version his
 ## Capabilities
 - Provide a standardized configuration for [semantic-release](https://github.com/semantic-release/semantic-release)
 - Use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- Script to auto-detect Commit Analyzations without a need for semantic-release Plugins.
+- Script to auto-detect Commit Analyzations without a need for semantic-release Plugins
 
 ## Installation
 To get started, you can install this package using your preferred package manager.
